@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         enterNumber = findViewById(R.id.phone)
         val send: Button = findViewById(R.id.send)
         val getNumber: Button = findViewById(R.id.getNumber)
+        val btFragmentOneHome: Button = findViewById(R.id.btFragmentOneHome)
+        val btFragmentTwoHome: Button = findViewById(R.id.btFragmentTwoHome)
 
 
 
@@ -42,7 +44,24 @@ class MainActivity : AppCompatActivity() {
                 startActivityForResult(getIntent, SELECTED_CONTACT_ID)
             }
         }
+        btFragmentOneHome.setOnClickListener {
+//            val fr = 10
+            Toast.makeText(this, "Fragment One", Toast.LENGTH_SHORT).show()
 
+            val frIntentOne: Intent = Intent(this, FragmentActivity::class.java).apply {
+                putExtra("FR_ONE", 10)
+            }
+            startActivity(frIntentOne)
+        }
+        btFragmentTwoHome.setOnClickListener {
+//            val fr = 20
+            Toast.makeText(this, "Fragment Two", Toast.LENGTH_SHORT).show()
+
+            val frIntentTwo: Intent = Intent(this, FragmentActivity::class.java).apply {
+                putExtra("FR_ONE", 20)
+            }
+            startActivity(frIntentTwo)
+        }
 
     }
 

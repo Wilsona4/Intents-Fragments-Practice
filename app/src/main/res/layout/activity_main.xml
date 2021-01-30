@@ -36,4 +36,25 @@
         android:textStyle="bold"
         android:text="Get Number" />
 
+    <Button
+        android:id="@+id/btFragmentOneHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="36dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Fragment One" />
+
+    <Button
+        android:id="@+id/btFragmentTwoHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="36dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Fragment Two" />
+
+
 </LinearLayout>
