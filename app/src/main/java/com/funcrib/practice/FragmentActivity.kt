@@ -16,7 +16,7 @@ class FragmentActivity : AppCompatActivity() {
         val btFragmentTwo: Button = findViewById(R.id.btFragmentTwo)
 
 //      Get Intent
-        val fr = intent.getStringExtra("FR_ONE")?.toInt()
+        val fr = intent.getStringExtra("FR")?.toInt()
 
         if (fr == 10) {
             supportFragmentManager.beginTransaction().apply {

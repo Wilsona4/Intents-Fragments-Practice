@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Fragment One", Toast.LENGTH_SHORT).show()
 
             val frIntentOne: Intent = Intent(this, FragmentActivity::class.java).apply {
-                putExtra("FR_ONE", 10)
+                putExtra("FR", 10)
             }
             startActivity(frIntentOne)
         }
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Fragment Two", Toast.LENGTH_SHORT).show()
 
             val frIntentTwo: Intent = Intent(this, FragmentActivity::class.java).apply {
-                putExtra("FR_ONE", 20)
+                putExtra("FR", 20)
             }
             startActivity(frIntentTwo)
         }
