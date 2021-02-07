@@ -15,22 +15,24 @@ class FragmentActivity : AppCompatActivity() {
         val btFragmentOne: Button = findViewById(R.id.btFragmentOne)
         val btFragmentTwo: Button = findViewById(R.id.btFragmentTwo)
 
+        if (savedInstanceState == null) {
 //      Get Intent
-        val fr = intent.getStringExtra("FR")?.toInt()
+            val fr = intent.getStringExtra("FR")?.toInt()
 
-        if (fr == 10) {
-            supportFragmentManager.beginTransaction().apply {
-                add(R.id.fragmentContainer, fragmentOne)
-                setReorderingAllowed(true)
-                addToBackStack(null)
-                commit()
-            }
-        } else if (fr == 20) {
-            supportFragmentManager.beginTransaction().apply {
-                add(R.id.fragmentContainer, fragmentTwo)
-                setReorderingAllowed(true)
-                addToBackStack(null)
-                commit()
+            if (fr == 10) {
+                supportFragmentManager.beginTransaction().apply {
+                    add(R.id.fragmentContainer, fragmentOne)
+                    setReorderingAllowed(true)
+                    addToBackStack(null)
+                    commit()
+                }
+            } else if (fr == 20) {
+                supportFragmentManager.beginTransaction().apply {
+                    add(R.id.fragmentContainer, fragmentTwo)
+                    setReorderingAllowed(true)
+                    addToBackStack(null)
+                    commit()
+                }
             }
         }
 
@@ -39,6 +41,12 @@ class FragmentActivity : AppCompatActivity() {
                 replace(R.id.fragmentContainer, fragmentOne)
                 setReorderingAllowed(true)
                 addToBackStack(null)
+                setCustomAnimations(
+                    R.anim.slide_in_left,
+                    R.anim.slide_out_right,
+                    R.anim.slide_in_right,
+                    R.anim.slide_out_left
+                )
                 commit()
             }
         }
@@ -47,6 +55,12 @@ class FragmentActivity : AppCompatActivity() {
                 replace(R.id.fragmentContainer, fragmentTwo)
                 setReorderingAllowed(true)
                 addToBackStack(null)
+                setCustomAnimations(
+                    R.anim.slide_in_left,
+                    R.anim.slide_out_right,
+                    R.anim.slide_in_right,
+                    R.anim.slide_out_left
+                )
                 commit()
             }
         }
