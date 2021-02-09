@@ -23,10 +23,10 @@ class FragmentActivity : AppCompatActivity() {
                 setReorderingAllowed(true)
                 addToBackStack(null)
                 setCustomAnimations(
-                        R.anim.slide_in_left,
-                        R.anim.slide_out_right,
-                        R.anim.slide_in_right,
-                        R.anim.slide_out_left
+                    R.anim.slide_in_left,
+                    R.anim.slide_out_right,
+                    R.anim.slide_in_right,
+                    R.anim.slide_out_left
                 )
                 replace(R.id.fragmentContainer, fragmentOne)
                 commit()
@@ -37,10 +37,10 @@ class FragmentActivity : AppCompatActivity() {
                 setReorderingAllowed(true)
                 addToBackStack(null)
                 setCustomAnimations(
-                        R.anim.slide_in_left,
-                        R.anim.slide_out_right,
-                        R.anim.slide_in_right,
-                        R.anim.slide_out_left
+                    R.anim.slide_in_left,
+                    R.anim.slide_out_right,
+                    R.anim.slide_in_right,
+                    R.anim.slide_out_left
                 )
                 replace(R.id.fragmentContainer, fragmentTwo)
                 commit()
@@ -53,10 +53,10 @@ class FragmentActivity : AppCompatActivity() {
             setReorderingAllowed(true)
             addToBackStack(null)
             setCustomAnimations(
-                    R.anim.slide_in_left,
-                    R.anim.slide_out_right,
-                    R.anim.slide_in_right,
-                    R.anim.slide_out_left
+                R.anim.slide_in_left,
+                R.anim.slide_out_right,
+                R.anim.slide_in_right,
+                R.anim.slide_out_left
             )
             replace(R.id.fragmentContainer, fragmentOne)
             commit()

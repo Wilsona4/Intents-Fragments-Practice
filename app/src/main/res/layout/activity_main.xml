@@ -23,8 +23,8 @@
         android:layout_gravity="center"
         android:layout_marginHorizontal="36dp"
         android:gravity="center"
-        android:textStyle="bold"
-        android:text="Send" />
+        android:text="Dial"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/getNumber"
@@ -33,8 +33,8 @@
         android:layout_gravity="center"
         android:layout_marginHorizontal="36dp"
         android:gravity="center"
-        android:textStyle="bold"
-        android:text="Get Number" />
+        android:text="Contacts"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btFragmentOneHome"
@@ -43,8 +43,8 @@
         android:layout_gravity="center"
         android:layout_marginHorizontal="36dp"
         android:gravity="center"
-        android:textStyle="bold"
-        android:text="Fragments" />
+        android:text="Fragments"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btFragmentTwoHome"
@@ -53,9 +53,8 @@
         android:layout_gravity="center"
         android:layout_marginHorizontal="36dp"
         android:gravity="center"
-        android:textStyle="bold"
         android:text="Dialog"
-        style="@style/ButtonEffects" />
+        android:textStyle="bold" />
 
 
 </LinearLayout>

@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         send.setOnClickListener {
             number = enterNumber.text.toString()
-            Toast.makeText(this, number, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Explicit Intent", Toast.LENGTH_SHORT).show()
 
             val intent: Intent =
                 Intent(this, DialActivity::class.java).apply { putExtra("DIGITS", number) }
