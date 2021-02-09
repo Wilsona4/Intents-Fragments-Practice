@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         getNumber.setOnClickListener {
+            Toast.makeText(this, "Implicit Intents", Toast.LENGTH_SHORT).show()
             val getIntent: Intent = Intent().apply {
                 action = Intent.ACTION_PICK
                 type = ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE
@@ -54,13 +55,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(frIntentOne)
         }
         btFragmentTwoHome.setOnClickListener {
-//            val fr = 20
-            Toast.makeText(this, "Fragment Two", Toast.LENGTH_SHORT).show()
 
-            val frIntentTwo: Intent = Intent(this, FragmentActivity::class.java).apply {
-                putExtra("FR", 20)
-            }
-            startActivity(frIntentTwo)
+            Toast.makeText(this, "Dialog", Toast.LENGTH_SHORT).show()
+
+            val effectsDialogFragment = EffectsDialogFragment()
+            effectsDialogFragment.show(supportFragmentManager, "Effects Dialog")
         }
 
     }

@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Phone Number"
+        android:hint="Input Phone Number"
         android:inputType="phone" />
 
     <Button
@@ -44,7 +44,7 @@
         android:layout_marginHorizontal="36dp"
         android:gravity="center"
         android:textStyle="bold"
-        android:text="Fragment One" />
+        android:text="Fragments" />
 
     <Button
         android:id="@+id/btFragmentTwoHome"
@@ -54,7 +54,8 @@
         android:layout_marginHorizontal="36dp"
         android:gravity="center"
         android:textStyle="bold"
-        android:text="Fragment Two" />
+        android:text="Dialog"
+        style="@style/ButtonEffects" />
 
 
 </LinearLayout>
